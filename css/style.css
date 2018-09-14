@@ -1,0 +1,15 @@
+.navbar {
+    box-shadow: 2px 2px 5px #C54739;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+}
+
+.active {
+    border-left: 4px solid #9F3D34;
+}
+
+/* #C54739
+   #9F3D34
+*/
