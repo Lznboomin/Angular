@@ -9,7 +9,7 @@ app.config(function($routeProvider) {
     })
     .when('/examples', {
         templateUrl: "examples.html"
-    })
+    })  
     .when('/resources', {
         templateUrl: "resources.html"
     })

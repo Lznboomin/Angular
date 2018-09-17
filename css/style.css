@@ -6,7 +6,7 @@ body {
 .navbar {
     box-shadow: 2px 2px 5px #C54739;
     background: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .nav-item {
@@ -19,6 +19,10 @@ body {
 
 a {
     color: #C54739
+}
+
+a:hover {
+    color: #9F3D34;
 }
 
 /* #C54739
