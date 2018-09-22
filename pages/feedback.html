@@ -41,6 +41,63 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-5">
+                <h1 class="text-center pb-5 display-4">Saada mulle kiri</h1>
+                <form method="post" action="send_mail.php" role="form">         
+                    <div class="controls">             
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Eesnimi *</label>
+                                    <input type="text" name="first_name" class="form-control" placeholder="Sisesta oma eesnimi" required="required" data-error="Eesnimi on kohustuslik.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Perenimi *</label>
+                                    <input type="text" name="last_name" class="form-control" placeholder="Sisesta oma perenimi" required="required" data-error="Perenimi on kohustuslik.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Email *</label>
+                                    <input type="email" name="email_address" class="form-control" placeholder="Sisesta oma email" required="required" data-error="Sisesta korrektne email.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Sõnum *</label>
+                                    <textarea name="comments" class="form-control" placeholder="Kuradima kõva lehe oled valmis vorpinud, mõtlesin et äkki saaksid mulle ka teha lehe?" rows="4" required="required" data-error="Väli on tühi."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-ngred btn-send" value="Saada sõnum">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> Kohustuslikud väljad.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     <footer class="footer">
         <div class="container">
@@ -52,7 +109,7 @@
 
 
 
-
+    <script src="../js/contact.js"></script>
     <script src="../js/router.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
