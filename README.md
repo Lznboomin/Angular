@@ -24,6 +24,7 @@ Or download it manually from the github [page](https://github.com/Lznboomin/Angu
 
 * [Bootstrap](https://getbootstrap.com/) - The web framework used
 * [AngularJS](https://angularjs.org/) - JavaScript MVW Framework
+* [PHP](http://php.net/) - Scripting language used
 
 
 ## Authors
