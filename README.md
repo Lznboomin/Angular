@@ -1,6 +1,6 @@
 # Angular
 
-The best web application built with love by @LasnaBoomin. Built with [AngularJS](https://angularjs.org/).
+Angular wep app built with love by @LasnaBoomin.
 
 ## Getting Started
 
