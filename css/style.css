@@ -14,7 +14,7 @@ body {
 }
 
 .active {
-    border-left: 4px solid #9F3D34;
+    color: #9F3D34 !important;
 }
 
 a {
@@ -28,3 +28,13 @@ a:hover {
 /* #C54739
    #9F3D34
 */
+
+.btn-ngred {
+    background-color:#C54739;
+    color: #f7f7f7;
+}
+
+.btn-ngred:hover {
+    background-color: #9F3D34;
+    color: #fff;
+}

@@ -18,5 +18,8 @@ app.config(function($routeProvider) {
     })
     .when('/feedback', {
         templateUrl: "feedback.html"
+    })
+    .when('/thankyou', {
+        templateUrl: "thank_you.html"
     });
 });
