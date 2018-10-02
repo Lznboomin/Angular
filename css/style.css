@@ -25,9 +25,24 @@ a:hover {
     color: #9F3D34;
 }
 
-/* #C54739
-   #9F3D34
-*/
+ul {
+    list-style: none;
+}
+
+button {
+    border-radius: 4px;
+}
+
+/*Custom classes*/
+.bg-dred {
+    background-color: #9F3D34;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #C54739;
+    color: #fff;
+}
 
 .btn-ngred {
     background-color:#C54739;
@@ -39,12 +54,12 @@ a:hover {
     color: #fff;
 }
 
-.bg-dred {
-    background-color: #9F3D34;
-    color: #fff;
+.fa-trash {
+    color: #9F3D34;
+    font-size: 36px;
 }
 
-.bg-red {
-    background-color: #C54739;
-    color: #fff;
-}
+/* .done {
+    color: gray;
+    text-decoration: line-through !important;
+} */

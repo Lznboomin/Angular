@@ -25,6 +25,31 @@ app.config(function($routeProvider) {
     });
 });
 
+
+
+//todo
+app.controller('taskCtrl', function($scope) {
+  $scope.tasks = [
+    { title: 'Learn AngularJS'},
+    { title: 'Finish school project'},
+    { title: 'Meet Susan at the Gym'}
+  ];
+
+  $scope.addtask = function() {
+    $scope.tasks.push($scope.task);
+    $scope.task = {};
+  };
+
+  $scope.removeItem = function(index) {
+    $scope.tasks.splice(index, 1);
+  };
+  //new code
+  $scope.getTotalTodos = function() {
+    return $scope.tasks.filter(function (task) {
+      return task.done;
+    }).length;
+  }
+});
 //Snake game
 angular.module('ngSnake', [])
 
