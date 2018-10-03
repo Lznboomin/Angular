@@ -48,7 +48,15 @@ app.controller('taskCtrl', function($scope) {
     return $scope.tasks.filter(function (task) {
       return task.done;
     }).length;
-  }
+  };
+
+  $scope.clearCompleted = function() {
+    var completedTasks = $scope.tasks;
+    $scope.tasks = [];
+    angular.forEach(completedTasks, function(task) {
+      if (!task.done) $scope.tasks.push(task);
+    })
+  };
 });
 //Snake game
 angular.module('ngSnake', [])

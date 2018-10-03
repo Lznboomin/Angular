@@ -46,31 +46,33 @@
         </div>
     </nav>
 
+    <!-- ng-click="removeItem($index)" -->
+
     <div class="container">
         <div ng-controller="taskCtrl">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 m-auto">
+                        <form ng-submit="addtask()">
+                                <input type="text" ng-model="task.title" class="form-control" placeholder="{{getTotalTodos() | number}} / {{tasks.length}} tegemisel">
+                                <button type="submit" class="btn btn-block btn-ngred lead">Lisa nimekirja</button>
+                                <br>
+                            </form>
+                            <button type="submit" class="btn btn-block" ng-click="clearCompleted()">Kustuta</button>
                     <ul>
                         <li class="task-item" ng-repeat="task in tasks">
-                            <span ng-click="removeItem($index)"><i class="fa fa-trash py-1"></i></span>
-                            <span class="done">{{task.title}}</span>
+                            <input type="checkbox" ng-model="task.done">          
+                            <span ng-class="{done: task.done}">{{task.title}}</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
-                    <form ng-submit="addtask()">
-                        <input type="text" ng-model="task.title" class="form-control">
-                        <button type="submit" class="btn-block btn-ngred">Add Task</button>
-                        <br>
-                    </form>
+                <div class="col-lg-6">
+                    <h2 class="display-4 text-center my-4">ToDo list...</h2>
+                    <p class="lead text-center">On kasulik abimees, kui tahad päevas midagi korda saata.</p>
+                    <p class="lead text-center">Lisa nimekirja paar asja, vaata kuidas toimib.</p>
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-lg-2 m-auto pt-5">
-                    <span> {{getTotalTodos() | number}} / {{tasks.length}} tegemisel</span>
-                </div>
-            </div>
+            
         </div>
 
 
