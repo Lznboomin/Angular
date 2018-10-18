@@ -32,7 +32,7 @@ app.controller('taskCtrl', function($scope) {
   $scope.tasks = [
     { title: 'Learn AngularJS'},
     { title: 'Finish school project'},
-    { title: 'Meet Susan at the Gym'}
+    { title: 'Go to gym'}
   ];
 
   $scope.addtask = function() {
@@ -58,6 +58,9 @@ app.controller('taskCtrl', function($scope) {
     })
   };
 });
+
+//examples
+
 //Snake game
 angular.module('ngSnake', [])
 
@@ -231,3 +234,20 @@ angular.module('ngSnake', [])
     };
 
   });
+
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
